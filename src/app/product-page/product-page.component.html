@@ -1,17 +1,159 @@
-<div class="main-divider">
-  <label for="">Enter Product Name :</label>
-  <input type="text" class="input-field" />
-  <label for="">Enter Price:</label>
-  <input type="number" class="input-field">
-  <div class="image-container">
-    <button class="btn-class">File</button>
-    <img src="" alt="">
-    </div>
+<!-- <div class="main-divider">
+  <h1>Enter New Product Here</h1>
+  <form [formGroup]="newProductForm" action="" >
+
+    <div> 
+      <label for="">Enter Product Name :</label></div>
+   <div > 
+
+    <input required formControlName="productName" type="text" class="input-field" />
+  
+  </div>
+   
+
+    <div> 
+      <label for="">Enter Price:</label></div>
+   
     <div>
-        <label for="">Enter Manufacturing Date:</label>
-        <input type="text" class="date-field">
-        <label for="">Enter Expiration Date:</label>
-        <input type="text" class="date-field">
+      <input formControlName="enterPrice" type="number" class="input-field" /></div>
+    
+<div> 
+  <label for="">Enter Manufacturing Date:</label>
+</div>
+   
+    <div> 
+      <input formControlName="manufacturingDate" type="date" class="date-field" />
     </div>
+   
+<div> 
+  <label for="">Enter Expiration Date:</label>
+</div>
+   
+    <div> 
+       <input formControlName="expirationDate" type="date" class="date-field" />
+      </div>
+  
+<div>  
+  <label for="">Add Image </label>
+</div>
+  
+    <div>  
+      <button class="btn-class">Click Here to add Image</button>
+    </div>
+  
+    <div>  
+      <img src="" alt="" />
+    </div>
+    <div> 
+      <label for="">Enter Sales Ref Name :</label>
+    </div>
+   <div> 
+  
+    <input type="text" class="input-field" />
+  </div>
+   
+
+  
+    <div> 
+      <label for="">Enter Company Name:</label>
+    </div>
+   
+    <div>
+      <input type="number" class="input-field" />
+    </div>
+    
+  <div> 
+  <label for="">Enter Manufacturing Date:</label>
+  </div>
+   
+    <div> 
+      <input type="date" class="date-field" />
+    </div>
+   
+  <div> 
+  <label for="">Enter Expiration Date:</label>
+  </div>
+   
+    <div> 
+       <input type="date" class="date-field" />
+      </div>
+  
+  <div>  
+  <label for="">Add Image </label>
+  </div>
+  
+    <div>  
+      <button class="btn-class">Click Here to add Image</button>
+    </div>
+  
+    <div>  
+      <img src="" alt="" />
+    </div>
+  
+  </form>
+
+ 
+<button class="save-btn">Save</button>
 </div>
 
+{{ this.newProductForm.value | json }} -->
+<form class="form-class">
+  <div class="col-11 mb-3 input-group  ">
+   
+    <input placeholder="Enter Product Name " type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+  </div>
+  <div class=" col-11  mb-3 input-group">
+   
+    <input placeholder="Enter Price" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    
+  </div>
+  <div class="col-11 mb-3 input-group">
+   
+    <input placeholder="Enter Manufacturing Date" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    
+  </div>
+  <div class="col-11 mb-3 input-group">
+  
+    <input  placeholder="Enter Expiration Date" type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="col-11  mb-3 input-group">
+  
+    <input placeholder="Enter Expiration Date" type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="col-11  mb-3 input-group">
+  
+    <input placeholder="Enter Expiration Date" type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="col-11  mb-3 input-group">
+  
+    <input placeholder="Enter Expiration Date" type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="col-11  mb-3 input-group">
+  
+    <input placeholder="Enter Expiration Date" type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="col-11  mb-3 input-group">
+  
+    <input placeholder="Enter Expiration Date" type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="col-11  mb-3 input-group">
+  
+    <input placeholder="Enter Expiration Date" type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="col-11  mb-3 input-group">
+  
+    <input placeholder="Enter Expiration Date" type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="col-11  mb-3 input-group">
+  
+    <input placeholder="Enter Expiration Date" type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+
+<div class=" ">  
+  
+  <button type="submit" class="btn btn-success">Submit</button>
+
+</div>
+
+</form>

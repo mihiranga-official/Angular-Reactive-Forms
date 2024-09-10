@@ -1,3 +1,16 @@
-.main-divider{
-    border: 2px solid orange;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr ;
+  margin: 2%;
+  padding: 2%;
+  border: 2px solid rgb(63, 61, 53);
+}
+
+button{
+  width: 100%;
 }
