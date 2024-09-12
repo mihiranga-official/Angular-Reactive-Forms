@@ -2,10 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { ProductService } from './product.service';
+
 import { HttpClientModule } from '@angular/common/http';
-import { IStudent } from './model/student';
+
 import { error } from 'console';
+import { IApi } from './apiData';
+import { ProductService } from '../product.service';
 
 
 
@@ -24,7 +26,7 @@ export class ProductPageComponent implements OnInit {
 
 
   newProductForm!: FormGroup;
-  stdData: IStudent[] = [];
+  stdData!: IApi ;
   private fb: FormBuilder = inject(FormBuilder);
   private service: ProductService = inject(ProductService);
 
@@ -39,7 +41,7 @@ export class ProductPageComponent implements OnInit {
     this.service.getAllStudent()
       .subscribe(
         {
-          next: (res: IStudent[]) => this.stdData = res,
+          next: (res: IApi) => this.stdData = res,
           error: (err: any) => console.log("err", err)
 
         }
@@ -57,12 +59,12 @@ export class ProductPageComponent implements OnInit {
   formGroups() {
     this.newProductForm = this.fb.group({
 
-      productName: ['', [Validators.required, Validators.minLength(1)]],
-      enterPrice: ['', [Validators.required, Validators.minLength(1)]],
-      manufacturingDate: ['', [Validators.required, Validators.minLength(1)]],
-      enterCompanayName: ['', [Validators.required, Validators.minLength(1)]],
-      enterSalesRefName: ['', [Validators.required, Validators.minLength(1)]],
-      expirationDate: ['', [Validators.required, Validators.minLength(1)]]
+      productName: ['', [Validators.required, Validators.minLength(5)]],
+      enterPrice: ['', [Validators.required, Validators.minLength(5)]],
+      manufacturingDate: ['', [Validators.required, Validators.minLength(5)]],
+      enterCompanayName: ['', [Validators.required, Validators.minLength(5)]],
+      enterSalesRefName: ['', [Validators.required, Validators.minLength(5)]],
+      expirationDate: ['', [Validators.required, Validators.minLength(5)]]
 
     })
   }
