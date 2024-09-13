@@ -29,6 +29,7 @@ export class ProductPageComponent implements OnInit {
   private service: ProductService = inject(ProductService);
 
   ngOnInit(): void {
+    debugger;
     this.formGroups()
     this.allStudent()
 
@@ -57,12 +58,12 @@ export class ProductPageComponent implements OnInit {
   formGroups() {
     this.newProductForm = this.fb.group({
 
-      productName: ['', [Validators.required, Validators.minLength(1)]],
-      enterPrice: ['', [Validators.required, Validators.minLength(1)]],
-      manufacturingDate: ['', [Validators.required, Validators.minLength(1)]],
-      enterCompanayName: ['', [Validators.required, Validators.minLength(1)]],
-      enterSalesRefName: ['', [Validators.required, Validators.minLength(1)]],
-      expirationDate: ['', [Validators.required, Validators.minLength(1)]]
+      productName: ['', [Validators.required]],
+      enterPrice: ['', [Validators.required]],
+      manufacturingDate: ['', [Validators.required]],
+      enterCompanayName: ['', [Validators.required]],
+      enterSalesRefName: ['', [Validators.required]],
+      expirationDate: ['', [Validators.required]]
 
     })
   }

@@ -3,7 +3,7 @@
   <form [formGroup]="newProductForm" action="" >
 
     <div> 
-      <label for="">Enter Product Name :</label></div>
+      <label for="">Enter Manufacturing Date :</label></div>
    <div > 
 
     <input required formControlName="productName" type="text" class="input-field" />
@@ -119,8 +119,9 @@
   </symbol>
 </svg>
 <div>  <h1>Enter Product Details</h1></div>
-<form [formGroup]="newProductForm" class="form-class">
+<form  [formGroup]="newProductForm" class="was-validated">
 
+  <!-- 
   <div class=" form-floating mb-3">
     <input  placeholder="Enter Product Name "
     formControlName="productName"
@@ -130,8 +131,7 @@
     aria-describedby="productname"
     >
     <label for="floatingInput">Email address</label>
-  </div>
-
+  </div> -->
 
   <!-- <div class="col-11 mb-3 input-group">
    
@@ -146,7 +146,7 @@
     
   </div> -->
 
-  <div class="col-11 mb-3 input-group">
+  <!-- <div class="col-11 mb-3 input-group">
     <input
       placeholder="Enter Price"
       formControlName="enterPrice"
@@ -213,9 +213,72 @@
   </div>
   <div class="col-11 mb-3 input-group">
     <button type="submit" class="btn btn-success">Submit</button>
-  </div>
+  </div> -->
 
-  <div
+  <!-- <div class="row-12 mb-3 input-group">
+    <label  class="form-label">Enter Manufacturing Date:</label>
+    <input class="form-control is-invalid"   required>
+  </div>
+    <div class="row-11 mb-3 input-group">
+      <label  class="form-label">Enter Manufacturing Date:</label>
+      <textarea class="form-control is-invalid"   required></textarea>
+    </div> -->
+
+
+    <div class="col-11 mb-3 input-group">
+      <label for="exampleInputEmail1" class="form-label">Enter Manufacturing Date:</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+   
+    </div>
+    <div class="col-11 mb-3 input-group">
+      <label for="exampleInputPassword1" class="form-label">Enter Manufacturing Date:</label>
+      <input type="datetime-local" class="form-control" id="exampleInputPassword1" required>
+    </div>
+
+    <div class="col-11 mb-3 input-group">
+      <label for="exampleInputEmail1" class="form-label">Enter Manufacturing Date:</label>
+      <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+    </div>
+
+    <div class="col-11 mb-3 input-group">
+      <label for="exampleInputPassword1" class="form-label">Enter Manufacturing Date:</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" required>
+    </div>
+
+    <div class="col-11 mb-3 input-group">
+      <label for="exampleInputEmail1" class="form-label">Enter Manufacturing Date:</label>
+      <input type="time" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+    </div>
+    <div class="col-11 mb-3 input-group">
+      <label for="exampleInputEmail1" class="form-label">Enter Manufacturing Date:</label>
+      <input type="time" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+    </div>
+    <div class="col-11 mb-3 input-group">
+      <label for="exampleInputEmail1" class="form-label">Enter Manufacturing Date:</label>
+      <input type="time" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+    </div>
+    <div class="col-11 mb-3 input-group">
+      <label for="exampleInputEmail1" class="form-label">Enter Manufacturing Date:</label>
+      <input type="month" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+    </div>
+    <div class="col-11 mb-3 input-group">
+      <label for="exampleInputEmail1" class="form-label">Enter Manufacturing Date:</label>
+      <input type="month" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+    </div>
+    <div class="col-11 mb-3 input-group">
+      <label for="exampleInputPassword1" class="form-label">Enter Manufacturing Date:</label>
+      <select  type="password" class="form-control" id="exampleInputPassword1" required>
+          <option >Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+
+  
+ 
+
+  <!-- <div
     style="width: 355px; height: 30px"
     *ngIf="
       isFiledInvalid('productName') ||
@@ -238,10 +301,10 @@
       <use xlink:href="#exclamation-triangle-fill" />
     </svg>
     <div>Please fill out all required fields correctly.</div>
-  </div>
+  </div> -->
 </form>
 
-<form action="">
+<!-- <form action="">
   <table>
     <thead>
       <tr>
@@ -266,5 +329,6 @@
     </tbody>
   </table>
 
-</form>
+</form> -->
+
 

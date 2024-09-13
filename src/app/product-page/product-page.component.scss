@@ -6,18 +6,25 @@ body {
 
 form {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr ;
-  margin: 2%;
-  padding: 2%;
-  border: 2px solid rgb(63, 61, 53);
+  grid-template-columns: 2fr 2fr   ;
+  margin: 1%;
+  padding: 1%;
+  border: 3px solid rgb(71, 99, 82);
 }
 
-button{
-  width: 100%;
-}
+
 
 
 table,th,tr,td {
-  border: 1px solid black;
+  border: 1px solid rgb(255, 0, 0);
 
+}
+label{
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+input{
+  width: 0%;
 }
