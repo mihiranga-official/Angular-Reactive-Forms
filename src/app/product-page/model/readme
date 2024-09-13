@@ -1,4 +1,56 @@
 1.this is how when we have api URL and 
 we can use apiData.ts interface class to define the data types
 
-2.
+2.<!-- <div
+    style="width: 355px; height: 30px"
+    *ngIf="
+      isFiledInvalid('productName') ||
+      isFiledInvalid('enterPrice') ||
+      isFiledInvalid('manufacturingDate') ||
+      isFiledInvalid('enterCompanayName') ||
+      isFiledInvalid('enterSalesRefName') ||
+      isFiledInvalid('expirationDate')
+    "
+    class="alert alert-danger d-flex align-items-center"
+    role="alert"
+  >
+    <svg
+      class="bi flex-shrink-0 me-2"
+      width="24"
+      height="24"
+      role="img"
+      aria-label="Danger:"
+    >
+      <use xlink:href="#exclamation-triangle-fill" />
+    </svg>
+    <div>Please fill out all required fields correctly.</div>
+  </div> -->
+
+
+  <!-- <form action="">
+  <table>
+    <thead>
+      <tr>
+        <th>ID Nation</th>
+        <th>Nation</th>
+        <th>ID Year</th>
+        <th>Year</th>
+        <th>Population</th>
+        <th>Slug Nation</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <tr *ngFor="let s of stdData">
+        <td>{{ s.IDNation }}</td>
+        <td>{{ s.Nation }}</td>
+        <td>{{ s.IDYear}}</td>
+        <td>{{ s.Year }}</td>
+        <td>{{ s.Population}}</td>
+        <td>{{ s.SlugNation}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</form> -->
+
