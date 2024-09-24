@@ -13,7 +13,7 @@ import { error } from 'console';
   selector: 'app-product-page',
   standalone: true,
   imports: [CommonModule,
-
+    RouterOutlet, 
     FormsModule,
     ReactiveFormsModule],
   templateUrl: './product-page.component.html',

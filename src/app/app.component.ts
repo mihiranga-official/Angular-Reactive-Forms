@@ -8,7 +8,7 @@ import { ProductPageComponent } from "./product-page/product-page.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ ProductPageComponent],
+  imports: [ ProductPageComponent,ReactiveFormsModule, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
